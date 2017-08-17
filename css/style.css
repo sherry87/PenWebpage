@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+}
+ul,li{list-style: none;}
+html,body {
+	position: relative;
+	width: 100%;
+	font-family:"微软雅黑";
+}
+
+.clearfix:after {
+	content: "\200B";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+input,textarea{outline: none;}
+
+
+a{text-decoration: none;}
+.first-cont{width: 100%;}
+.first-cont img{width: 100%;}
+.header{width:100%;background: #3d3d3d;height:70px;color: #fff;text-align: center;}
+.header a{display: inline-block;width: 140px;text-align: center;height: 100%;padding: 17px 0;cursor: pointer;}
+.header a >p:first-child{font-size:16px;font-weight: bold;color: #ededed;line-height: 1.6;}
+.header a >p:last-child{font-size:12px;color: #898989;}
+.header a.active,.header a:hover{background: #ededed;}
+.header a.active >p:first-child,.header a:hover >p:first-child{color:#3d3d3d;}
+
+
+/****about****/
+.about{margin: 0 auto;width: 1000px;padding-top: 65px;padding-bottom: 105px;}
+.x-title{width: 100%;height: 120px;position: relative;}
+.x-title .name{font-size: 68px;float: left;font-weight: 100;height: 120px;line-height: 120px;}
+.x-title .line{padding-top: 55px;}
+.about .line{margin-left: 240px;margin-right: 0;}
+.line .l-dashed{border-bottom: 1px  dashed #ccc;width: 100%;height: 2px;display: block;}
+
+.about-cont{width: 100%;}
+.about-des{float: left;width: 50%;padding-right: 120px;}
+.about-des dt{font-size: 24px;line-height: 70px;font-family: simhei;}
+.about-des dd{font-family: simsun;font-size: 12px;line-height: 22px;}
+
+.about-info{float: left;width: 50%;    padding: 30px 0 0 15px;}
+.about-info dt,.about-info dd{float: left;}
+.about-info dt{font-family: simhei;font-size: 19px;line-height: 55px;font-weight: 600;padding-bottom: 10px;}
+.about-info dt .sub{font-weight: 100;font-size: 13px;}
+.about-info dd{width: 100%;border-top: 1px solid #dedede;font-size: 13px;}
+.about-info dd li{float: left;height: 38px;line-height: 40px;}
+.about-info dd>li:first-child{width: 180px;font-family: simhei;}
+.about-info dd>li:last-child{width: 300px;font-family: simsun;}
+
+
+/****service****/
+.service-bg{background:#323232;}
+.service{margin: 0 auto;width: 1000px;padding-top: 45px;    padding-bottom: 70px;}
+.service .x-title .name{color:#77c59e ;line-height: 110px;}
+.service .x-title .sub{font-size: 18px;position: absolute;color:#77c59e ;    top: 60px;left: 305px;}
+.service .line{margin-left: 400px;padding-top: 70px;}
+.service-list{width: 100%;padding-top: 36px;}
+.service-item{float: left;width: 490px;height: 128px;background:#5c5c5c;margin-bottom: 20px;margin-right:20px;}
+.service-item div,.service-item dl,.service-item dt,.service-item dd{float: left;}
+.service-item.m-right{margin-right:0px;}
+.service-tp{width:10px;height:100%;background: #77c59e;}
+.service-cont{width: 430px;height: 100%;    padding-left: 12px;font-family: simhei;}
+.service-cont dt{    position: relative;    padding-left: 62px;    height: 60px;    line-height: 60px;    font-size: 18px;    color: #ececec;}
+.icon{background: url(../img/icon.png) no-repeat;position:absolute;width: 46px;height: 46px;top:4px;left:0;}
+.icon-product{background-position: -22px -20px;}
+.icon-jg{background-position: -152px -20px;}
+.icon-pp{background-position: -92px -20px;}
+.icon-sc{background-position: -214px -20px;}
+.service-cont dd{    font-size: 12px;    width: 100%;    color: #bdbdbd;    padding-left: 12px;    line-height: 20px;}
+
+/****design*****/
+.design{width: 1040px;margin: 0 auto;padding-top: 35px;padding-bottom: 60px;}
+.design .x-title {padding-left: 20px;}
+.design .x-title .name{font-size: 52px;letter-spacing: 3px;}
+.design .x-title .sub{font-size: 16px;letter-spacing: 0;position: absolute;top: 68px;left: 249px;}
+.design .x-title .line{margin-left: 200px;    margin-left: 285px; padding-top: 82px;}
+.design-cont{padding-top: 48px;    padding-left: 26px;}
+.design-cont li{float: left;width: 237px;margin-right: 20px;margin-bottom: 20px;}
+.design-cont li:nth-child(4n){margin-right: 0px;}
+.design-cont li img{width: 100%;}
+
+/****connect******/
+.connect-bg{background: #bcbebd;}
+.connect{width: 1000px;margin: 0 auto;padding-top: 70px;padding-bottom:110px;}
+.connect .x-title .name{font-size: 52px;letter-spacing: 3px;}
+.connect-js{width: 100%;    font-size: 12px;    line-height: 20px;padding-top: 16px;padding-bottom:20px;font-family: simsun;}
+.connect-form{padding-top: 16px;padding-bottom: 7px;}
+.connect-form li{float: left;background: #fff;font-size: 12px;font-family: simsun;width: 100%;    margin-bottom: 18px;}
+.connect-form li.md-width{width: 487px;margin-right: 25px;height: 55px;line-height: 50px;}
+.connect-form li.md-width:nth-child(2){margin-right: 0;}
+.connect-form li input{border: none;height: 30px;width: 360px;}
+.connect-form li span{display: inline-block;padding-left: 30px;letter-spacing: 3px;}
+.connect-form li textarea{    width: 960px;    height: 150px;    border: none;    margin-left: 24px;margin-top: 10px;}
+.connect-form li p{padding-left: 24px;padding-top: 20px;    letter-spacing: 1px;}
+
+.btn{float: left;background:#00aeff;color: #fff;height: 35px;border: none;margin-right: 5px;padding: 0 20px;}
+.btn.btn-fb{background: #3e3e3e;padding: 0 40px;}
+
+.footer{background: #3E3E3E;height: 70px;line-height: 70px;text-align: center;    color: #bdbdbd;}
